@@ -1,0 +1,60 @@
+/* STEP 5: Position and size the video element to take up the full screen */
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* STEP 6: Style the HGROUP so that it overlays the video */
+header hgroup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+/* STEP 7: Other typographic styles for the H1 */
+header hgroup h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 0.5em;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* STEP 8: Style the P */
+header hgroup p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5em;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* STEP 9: Finish up the BUTTON */
+header hgroup button {
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #ffffffcc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease;
+}
+
+header hgroup button:hover {
+    background: white;
+    transform: scale(1.05);
+}
